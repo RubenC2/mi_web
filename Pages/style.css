@@ -1,3 +1,31 @@
-.menu{
-    color:blue
+
+.menu {
+    color: brown;
+    background-color: aliceblue;
+    display: flex;
+    font-size: 60px;
+    font-family: "Courier New";
+    padding: 0;
+    justify-content: space-around;
+}
+body {
+    background-image: url(/Imágenes/fotoprincipal.jpg);
+    background-size cover; /* Ajusta el tamaño de la imagen para que cubra toda la página */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Hace que el fondo ocupe toda la altura de la ventana del navegador */
+    margin: 0;
+    padding: 0;
+}
+
+
+footer {
+    font-family:'Courier New';
+    display: flex;
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0;
+    margin: 0
+}
+li {
+    margin-right: 20px; /* Espacio entre los elementos */
 }
