@@ -3,35 +3,73 @@
     <head>
         <meta charset="UTF-8"/>
         <title>Contacto</title>
+        <link rel="stylesheet" href="/Pages/style.css" />
     </head>
 
     <body>
         <header>
             <nav class="menu">
-                <a href="/index.html">Home</a>
-                <a href="./Biografía.html">Biografía</a>
-                <a href="./Portfolio.html">Portfolio</a>
-                <a href="./Contacto.html">Contacto</a>
+                <a class= "menuItem" href="/index.html">Home</a>
+                <a class= "menuItem" href="./Biografía.html">Biografía</a>
+                <a class= "menuItem" href="./Portfolio.html">Portfolio</a>
+                <a class= "menuItem" href="./Contacto.html">Contacto</a>
             </nav>
         </header>
         <main>
-            <h2>Aquí puedes contactarme:</h2>
-            <form>
-                <label for="Nombre">Nombre:</label>
-                <input type="text" placeholder="Escribe tu nombre" required/>
-                <label for="Apellidos">Apellidos</label>
-                <input type="text" placeholder="Aquí tus apellidos" required/>
-                <label for="email">Email</label>
-                <input type="email" placeholder="example@example.com" required/>
-                
 
+            <h2 id="titleForm">Aquí puedes contactarme:</h2>
+            <form class="contactForm">
+                <label class="labelForm" Nombre>🌈Nombre:</label>
+                <input type="text" placeholder="Escribe tu nombre" required/>
+                <label class="labelForm" for="Apellidos">🌈Apellidos:</label>
+                <input type="text" placeholder="Aquí tus apellidos" required/>
+                <label class="labelForm" for="email">🌈Email:</label>
+                <input type="email" placeholder="example@example.com" required/>
+                <label class="labelForm" for="mensaje">🌈Te leo 👀</label>
+                <div class="textarea">
+                <textarea class="labelForm" placeholder="Cuéntame..." required></textarea>
+                </div>
+                <button class="buttonForm" type="submit">Enviar</button>
+                <input class="checkbox" type="checkbox" required>Acepto la <a href= "https://policies.google.com/privacy?hl=es" target="_blank">política de privacidad.</a>
             </form>
         </main>
-
+        
         <footer>
-          
-
+            <ul>
+            <!-- Enlace IG a logo online -->
+            <li><a href="https://www.instagram.com/" target="_blank">
+                    <img class="redesSociales" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+                </a></li>
+    
+            <!-- Enlace IG a la imagen de la carpeta 
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="./Imágenes/Instagram_icon.png" style="width: 40px;"></a></li> -->
+    
+    
+            <!-- Enlace FB a Logo online-->
+            <li><a href="https://www.facebook.com/" target="_blank">
+                    <img class="redesSociales" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                        alt="Facebook Logo">
+                </a></li>
+    
+            <!-- Enlace FB a logo de la carpeta
+                  <li><a href="https://www.facebook.com/" target="_blank"><img src="./Imágenes/facebook icon.png"></a></li> -->
+    
+            <!-- Enlace LinkedIn a logo online -->
+            <li><a href="https://www.linkedin.com/in/rub%C3%A9n-castro-35a69878/" target="_blank">
+                    <img class="redesSociales" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" 
+                    alt="LinkedIn Logo">
+                </a></li>
+    
+            <!-- Enlace LinkedIn a logo de la carpeta
+                    <li><a href="https://www.linkedin.com/in/rub%C3%A9n-castro-35a69878/" target="_blank"><img src="./Imágenes/LinkedIn_logo.png" style="width: 40px; height: 40px;></a></li> -->
+    
+             <li><a href="https://github.com/RubenC2/mi_web" target="_blank"></a>
+                        <img class="redesSociales" src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" 
+                        alt="GitHub Logo">
+                    </a></li>
+            </ul>
+            
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
- <!-- <image src="./Imágenes/Yo.jpg" alt="Mi foto"></image>
