@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Contacto</title>
-    <link rel="stylesheet" href="/Pages/style.css" />
+    <link rel="stylesheet" href="/pages/style.css" />
 </head>
 
 <body>
@@ -21,25 +21,27 @@
         <h2 id="titleForm">Aquí puedes contactarme:</h2>
         <form class="contactForm">
 
-            <label class="labelForm" for="nombre">🌈Nombre:</label>
+            <label class="labelForm" for="nombre">Nombre:</label>
             <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required />
 
-            <label class="labelForm" for="apellidos">🌈Apellidos:</label>
+            <label class="labelForm" for="apellidos">Apellidos:</label>
             <input type="text" name="apellidos" id="apellidos" placeholder="Aquí tus apellidos" required />
 
-            <label class="labelForm" for="email">🌈Email:</label>
+            <label class="labelForm" for="email">Email:</label>
             <input type="email" name="email" id="email" placeholder="example@example.com" required />
 
-            <label class="labelForm" for="mensaje">🌈Te leo 👀</label>
+            <label class="labelForm" for="mensaje">Déjame aquí tu mensaje:</label>
             <div class="textarea">
-                <textarea class="labelForm" name="mensaje" id="mensaje" placeholder="Cuéntame..." required></textarea>
+                <textarea class="labelForm" name="mensaje" id="mensaje" placeholder="Tu mensaje..." required></textarea>
             </div>
 
             <button class="buttonForm" type="submit">Enviar</button>
 
             <input class="checkbox" name="privacidad" id="privacidad" type="checkbox" required>Acepto la <a
                 href="https://policies.google.com/privacy?hl=es" target="_blank">política de privacidad.</a>
+            <div id="mensajeError"></div>
         </form>
+
     </main>
 
     <footer>
@@ -50,7 +52,8 @@
                 </a></li> -->
 
             <!-- Enlace IG a la imagen de la carpeta -->
-            <li><a href="https://www.instagram.com/" target="_blank"><img src="./Imágenes/Instagram_icon.png"></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><img class="redesSociales"
+                        src="/imagenes/Instagram_icon.png"></a></li>
 
 
             <!-- Enlace FB a Logo online
@@ -60,7 +63,8 @@
                 </a></li> -->
 
             <!-- Enlace FB a logo de la carpeta -->
-            <li><a href="https://www.facebook.com/" target="_blank"><img src="./Imágenes/facebook icon.png"></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><img class="redesSociales"
+                        src="/imagenes/facebook icon.png"></a></li>
 
             <!-- Enlace LinkedIn a logo online 
             <li><a href="https://www.linkedin.com/in/rub%C3%A9n-castro-35a69878/" target="_blank">
@@ -70,16 +74,17 @@
 
             <!-- Enlace LinkedIn a logo de la carpeta -->
             <li><a href="https://www.linkedin.com/in/rub%C3%A9n-castro-35a69878/" target="_blank"><img
-                        src="./Imágenes/LinkedIn_logo.png"></a></li>
+                        class="redesSociales" src="/imagenes/LinkedIn_logo.png"></a></li>
 
             <!-- Enlace github a logo online
             <li><a href="https://github.com/RubenC2/mi_web" target="_blank"></a>
                 <img class="redesSociales" src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png"
                     alt="GitHub Logo"> -->
-                </a>
+            </a>
             </li>
-            <!-- Enlace github a logo de la carpeta-->
-            <li><a href="https://github.com/RubenC2" target="_blank"><img src="/Imágenes/logoGithub.png"></a></li>
+            <!-- Enlace github a logo de la carpeta, va a github "mi_web" pero no al perfil-->
+            <li><a href="https://github.com/RubenC2" target="_blank"><img class="redesSociales"
+                        src="/imagenes/logoGithub.png"></a></li>
         </ul>
 
     </footer>
