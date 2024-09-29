@@ -84,14 +84,22 @@ ul {
 .imagenBio {
     display: flex;
     justify-content: center;
-
 }
 
 #bioImagen {
     width: 300px;
     height: auto;
+    border-radius: 20px;
 }
+.textBio {
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    background-color: rgb(166, 121, 44);
+    border-radius: 20px;
 
+}
 
 
 /* Página Portfolio */
@@ -143,6 +151,7 @@ form {
     background-color: black;
     color: whitesmoke;
 }
+
 
 /*@media (max-with: 500px) {
 /*    .menu {

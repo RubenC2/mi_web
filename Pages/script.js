@@ -7,6 +7,7 @@ const formulario = document.querySelector('.contactForm');
 
 formulario.addEventListener('submit', function (event) {
     alert('Mensaje enviado, muchas gracias.');
+    
 })
 
 
