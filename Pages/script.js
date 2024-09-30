@@ -5,10 +5,10 @@ const formulario = document.querySelector('.contactForm');
 formulario.addEventListener('submit', function (event) {
     event.preventDefault(); 
 
-// alert('Mensaje enviado, muchas gracias.');
+
 
 console.log(event.target.elements);
-//Texto
+
 console.log(event.target.nombre.value);
 console.log(event.target.apellidos.value);
 console.log(event.target.email.value);
@@ -20,6 +20,8 @@ const apellidos = event.target.apellidos.value;
 const email = event.target.email.value;
 const mensaje = event.target.mensaje.value;
 const privacidad = event.target.privacidad.checked;
+const regex = /^[A-Za-z0-9]+@[A-Za-z]{3,}\.[A-Za-z]{2,4}$/;
+
 
 let msj = "";
 
@@ -34,8 +36,9 @@ if (apellidos.length < 2 || apellidos.length > 40) {
     msj += "Los apellidos tienen que tener entre 2 y 40 caracteres\n";
 }
 
-if ((!email.endsWith(".com") && !email.endsWith(".es")) || !email.includes("@"))
-    {
+
+if (!regex.test(email)) {
+//((!email.endsWith(".com") && !email.endsWith(".es")) || !email.includes("@"))
     console.log("Error, email no válido:" + email);
     msj += "Error, email no válido: " + email + "\n";
 }
